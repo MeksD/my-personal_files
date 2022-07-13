@@ -1,0 +1,1 @@
+No worries, you can read some stuffs I considered worthy of note on this my-personal_file Repository.

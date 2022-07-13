@@ -1,0 +1,80 @@
+
+
+
+
+How to use gcc 5.x on ubuntu 14.04  OR HIGHER VERSIONS FOR Ubuntu 20.04
+
+
+
+
+
+RUN THE INSTALLATION PROCESS:
+
+
+
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+
+sudo apt-get update
+
+sudo apt-get install gcc-5 g++-5
+
+
+
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-5
+
+
+
+
+
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 1
+
+
+
+to set first priority to gcc-5
+
+
+
+
+
+
+
+
+
+
+
+root@a8d5b4cdb27b:/# sudo apt-get install gcc-5 g++-5
+
+Reading package lists... Done
+
+Building dependency tree
+
+Reading state information... Done
+
+Package g++-5 is not available, but is referred to by another package.
+
+This may mean that the package is missing, has been obsoleted, or
+
+is only available from another source
+
+
+
+
+
+However the following packages replace it:
+
+  gcc-10-test-results gcc-11-test-results gcc-9-test-results gcc-8-test-results gcc-7-test-results
+  
+
+
+
+
+TO GCC a (dot c file i.e .c file  Take for example main.c) below is the format:
+
+
+
+gcc -o nameofOutput nameofInput.c
+
+
+
+congratulations.
+
